@@ -1,11 +1,11 @@
 import Image from "next/image"
 
-function CategoryList({CategoryList}) {
+function CategoryList({categoryList}) {
   return (
     <div>
-       {CategoryList.map((category,index)=> (
+       {categoryList.map((category,index)=> (
         <div>
-            <Image src={category.image.url}
+            <Image src={category.icon.url}
             alt="icon"
             width={35}
             height={35}/>
